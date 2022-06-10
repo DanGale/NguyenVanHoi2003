@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/ass2.css" type="">
+    
+<style>
+    .mobile-hotline{display:none}
+    .hotline {position: fixed;
+        left: 10px;
+        bottom: 10px;
+        z-index: 9000;
+        display: block;
+        background: #fac100;
+        color: red;
+        padding-top: 5px;padding-bottom:5px; padding-left:12px; padding-right: 12px;
+        border-radius: 99px;}
+    .hotline .hotline-number{font-size:20px; color: #b20000; font-weight: bold}
+     
+    @media  (max-width: 767px) {
+     
+        .hotline{
+     
+            display :none;}}
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="dangnhap.html">Đăng nhập</a>
+        <a class="active" href="dangky.html">Đăng ký</a>
+        <div class="search-container">
+            <form action="">
+                <input class="search" type="text" placeholder="Tìm kiếm.." name="search">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+    <!-- endtopnav -->
+    <div class="container">
+        <header>
+            <img src="image/Screenshot 2022-06-08 101558.png" alt="" class="banner">
+        </header>
+        <!-- end banner -->
+        <nav>
+            <div class="nav-menu">
+                <ul>
+                    <li><a href="index.html">Trang chủ</a></li>
+                    <li><a target="page" href="gioithieu.html">Giới
+                            thiệu</a>
+                        <ul>
+                            <li><a href="#">Sơ đồ tổ chức</a></li>
+                            <li><a href="#">Web site Sở GD&ĐT</a></li>
+                            <li><a href="#">Giới thiệu chung</a></li>
+                        </ul>
+                    </li>
+                    <li><a target="page" href="thongbao.html">Thông báo</a>
+                        <ul>
+                            <li><a href="#">Thông báo từ sở</a></li>
+                            <li><a href="#">Thông báo của trường</a></li>
+                        </ul>
+                    </li>
+                    <li><a target="page" href="hoatdong.html">Hoạt động</a>
+                        <ul>
+                            <li><a href="#">Hoạt động ngoại khóa</a></li>
+                            <li><a href="#">Sinh hoạt CLB năng khiếu</a></li>
+                            <li><a href="#">Chương trình hè</a></li>
+                            <li><a href="">Hoạt động chuyên môn</a></li>
+                            <li><a href="">Hoạt động đoàn thể</a></li>
+                        </ul>
+                    </li>
+                    <li><a target="page" href="Tintuc.html">Tin tức</a>
+                        <ul>
+                            <li><a href="#">Tuyển dụng</a></li>
+                            <li><a href="#">Học sinh</a></li>
+                            <li><a href="#">Giải thưởng</a></li>
+                            <li><a href="#">Trường liên kết</a></li>
+                            <li><a href="#">Tin tức từ sở</a></li>
+                            <li><a href="#">Tin tức của trường</a></li>
+                        </ul>
+                    </li>
+                    <li><a target="page" href="tainguyen.html">Tài nguyên</a>
+                        <ul>
+                            <li><a href="#">Thời khóa biểu</a></li>
+                            <li><a href="#">Thư viện ảnh</a></li>
+                            <li><a href="#">Video clip</a></li>
+                            <li><a href="#">Tài liệu</a></li>
+                            <li><a href="#">Tiện ích</a></li>
+                            <li><a href="#">Đề thi</a></li>
+                            <li><a href="#">Hỗ trợ đổi mới</a></li>
+                            <li><a href="#">Kế hoạch</a></li>
+                            <li><a href="#">Công văn đến</a></li>
+                            <li><a href="#">Công văn đi</a></li>
+                        </ul>
+                    </li>
+                    <li><a target="page" href="tracuu.html">Tra cứu</a>
+                        <ul>
+                            <li><a href="#">Bảng điểm</a></li>
+                            <li><a href="#">Văn bằng</a></li>
+                        </ul>
+                    </li>
+                    <li><a target="page" href="lienhe.html">Liên hệ</a>
+                        <ul>
+                            <li><a href="#">Hotline</a></li>
+                            <li><a href="#">Email</a></li>
+                            <li><a href="#">Số điện thoại</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- end menu -->
+        <div class="news-marquee">
+            <marquee scrollamount="10" loop>Chào mừng bạn đến với cổng thông tin điện thử của trường THPT Cẩm Giàng II
+            </marquee>
+        </div>
+        <!-- end chu chay -->
+        <artical class="news-chay">
+            <marquee id="marq" scrollamount="10" direction="right" loop="50" scrolldelay="0" onmouseover="this.stop()"
+                onmouseout="this.start()">
+                <a
+                    href="http://thptcamgiang2.haiduong.edu.vn/tin-tuc-su-kien/tin-tuc-tu-co-so/huyen-kim-thanh-thuc-hien-chu-de-nam-hoc-xay-dung-truong-mam.html"><img
+                        src="image/1.png" title="Họp ban chỉ đạo thi tốt nghiệp thpt năm 2022" width="500" height="350" /> </a>
+            </marquee>
+        </artical>
+        <article>
+            <h2 class="title">TIN TỨC MỚI NHẤT</h2>
+            <div class="row">
+                <div class="col">
+                    <div class="news1 news">
+                        <img src="image/hop.png" alt="" class="image-news">
+                        <a href="https://vnexpress.net/viet-nam-lan-dau-khong-thua-han-quoc-o-cap-u23-4472409.html"
+                            class="title-news1">Họp Ban Chỉ đạo thi tốt nghiệp THPT năm 2022 </a>
+                        <p class="desc">Chiều 26/5/2022, Ban Chỉ đạo thi tốt nghiệp THPT tỉnh Hải Dương năm 2022 tổ chức
+                            cuộc họp triển khai công tác chỉ đạo kỳ thi. Đồng chí Nguyễn Minh Hùng, Phó Chủ tịch UBND,
+                            Trưởng Ban chỉ đạo dự và chủ trì cuộc họp.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="news2 news">
+                        <img src="image/3.png" alt="" class="image-news">
+                        <a href="https://vnexpress.net/viet-nam-chua-chac-di-tiep-ke-ca-thang-malaysia-4472461.html"
+                            class="title-news2">Huyện Ninh Giang tổ chức hội thi “Ngày hội sáng tạo của bé” năm học
+                            2021-2022</a>
+                        <p class="desc">Thực hiện chủ đề năm học “Xây dựng trường mầm non xanh - an toàn - thân thiện”
+                            gắn với chuyên đề “Xây dựng trường mầm non lấy trẻ làm trung tâm giai đoạn 2021-2025”, vừa
+                            qua, tại trường mầm non Ứng Hoè, Phòng Giáo dục và Đào tạo (GD ĐT) huyện Ninh Giang tổ chức
+                            hội thi “Ngày hội sáng tạo của bé” năm học 2021-2022. </p>
+                    </div>
+                </div>
+
+                <div class="col">
+                    <div class="news3 news">
+                        <img src="image/2.png" alt="" class="image-news">
+                        <a href="https://vnexpress.net/viet-nam-chua-chac-di-tiep-ke-ca-thang-malaysia-4472461.html"
+                            class="title-news3">Tứ Kỳ ưu tiên phát triển giáo dục</a>
+                        <p class="desc">Xác định là một trong những tiêu chí then chốt trong xây dựng nông thôn mới
+                            (NTM), những năm qua, huyện Tứ Kỳ đã ưu tiên các nguồn lực để tạo chuyển biến tích cực, mạnh
+                            mẽ trong phát triển giáo dục.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/TabRc8hnaOU"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen> </iframe>
+            </div>
+            <footer>
+                Trường THPT Cẩm Giàng II
+                <br>
+                Địa chỉ: Thôn Chi Khê - Xã Tân Trường - Huyện Cẩm Giàng - Tỉnh Hải Dương
+                <br>
+                Điện thoại: 02203.785.708 - Email: thpt-camgiang2@haiduong.edu.vn
+            </footer>
+            <a href="tel:+84972939830"><div class="hotline">
+                <span class="before-hotline">Hotline:</span>
+                <span class="hotline-number">0972.939.830</span>
+                </div></a>
+    </div>
+</body>
+
+</html>
