@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do you love me?</title>
+    <link rel="stylesheet" href="themify-icons-font/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            <h2>Bạn có yêu tớ không?<i style="font-size: 30px;" class="ti-drupal"></i></h2>
+            <button id="yes" onclick="yes()">Có <i class="ti-face-smile"></i></button> <button id="no">Không <i
+                    class="ti-face-sad"></i></button>
+            <p id="hoa"></p>
+        </div>
+    </div>
+
+    <script>
+        var getNo = document.querySelector("#no");
+        getNo.addEventListener("mouseover", function () {
+            let top = Math.round(Math.random() * 400) + 50;
+            let left = Math.round(Math.random() * 300);
+            getNo.setAttribute("style", `position: absolute; top:${top}px;left: ${left}px;`);
+        });
+
+        var cha = document.querySelector(".box");
+        function yes() {
+            cha.innerHTML = '<img src="images/luvutoo.gif" alt="">'
+        }
+    </script>
+
+</body>
+
+</html>
